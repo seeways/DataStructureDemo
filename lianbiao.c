@@ -6,7 +6,7 @@
 	链表
 */
 
-link* initLink() {
+link* lianbiaoInitLink() {
 	// no head pointer 
 	//link* p = NULL; // create head pointer
 	//link* temp = (link*)malloc(sizeof(link));// create firstNode
@@ -47,7 +47,7 @@ link* initLink() {
 
 
 //p为原链表，elem表示新数据元素，pos表示新元素要插入的位置
-link* insertElem(link* p, int elem, int pos) {
+link* lianbiaoInsertElem(link* p, int elem, int pos) {
 	link* temp = p;//创建临时结点temp
 	//首先找到要插入位置的上一个结点
 	for (int i = 0; i < pos; i++) {
@@ -67,7 +67,7 @@ link* insertElem(link* p, int elem, int pos) {
 }
 
 //p为原链表，pos为要删除元素的值
-link* delElem(link* p, int pos) {
+link* lianbiaoDelElem(link* p, int pos) {
 	link* temp = p;
 	//temp指向被删除结点的上一个结点
 	for (int i = 0; i < pos; i++) {
@@ -80,7 +80,7 @@ link* delElem(link* p, int pos) {
 }
 
 //p为原链表，elem表示被查找元素、
-int selectElem(link* p, int elem) {
+int lianbiaoSelectElem(link* p, int elem) {
 	//新建一个指针t，初始化为头指针 p
 	link* t = p;
 	int i = 0;
@@ -97,7 +97,7 @@ int selectElem(link* p, int elem) {
 }
 
 //更新函数，其中，add 表示更改结点在链表中的位置，newElem 为新的数据域的值
-link* amendElem(link* p, int pos, int newElem) {
+link* lianbiaoAmendElem(link* p, int pos, int newElem) {
 	link* temp = p;
 	temp = temp->next;//在遍历之前，temp指向首元结点
 	//遍历到被删除结点
@@ -110,7 +110,7 @@ link* amendElem(link* p, int pos, int newElem) {
 
 
 
-void test1Display(link* p) {
+void lianbiaoDisplay(link* p) {
 	link* temp = p;//将temp指针重新指向头结点
 	//只要temp指针指向的结点的next不是Null，就执行输出语句。
 	while (temp->next) {
@@ -119,11 +119,3 @@ void test1Display(link* p) {
 	}
 	printf("\n");
 }
-
-
-//void main() {
-//	//初始化链表（1，2，3，4）
-//	printf("初始化链表为：\n");
-//	link* p = initLink();
-//	test1Display(p);
-//}

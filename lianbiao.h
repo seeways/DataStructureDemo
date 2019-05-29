@@ -14,16 +14,16 @@ typedef struct Link {
 }link;
 
 
-link* initLink();
+link* lianbiaoInitLink();
 
-link* insertElem(link* p, int elem, int pos);
+link* lianbiaoInsertElem(link* p, int elem, int pos);
 
-link* delElem(link* p, int add);
+link* lianbiaoDelElem(link* p, int add);
 
-int selectElem(link* p, int elem);
+int lianbiaoSelectElem(link* p, int elem);
 
-link* amendElem(link* p, int add, int newElem);
+link* lianbiaoAmendElem(link* p, int add, int newElem);
 
-void test1Display(link* p);
+void lianbiaoDisplay(link* p);
 
 #endif // !lianbiao

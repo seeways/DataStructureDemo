@@ -35,22 +35,23 @@ void shunxubiao() {
 	else printf("%d", pos);
 
 }
+
 void lianbiao() {
 	//初始化链表（1，2，3，4）
 	printf("初始化链表为：\n");
-	link* p = initLink();
-	test1Display(p);
+	link* p = lianbiaoInitLink();
+	lianbiaoDisplay(p);
 
 	printf("在下标4的位置插入元素5：\n");
-	p = insertElem(p, 5, 4);
-	test1Display(p);
+	p = lianbiaoInsertElem(p, 5, 4);
+	lianbiaoDisplay(p);
 
 	printf("删除下标3:\n");
-	p = delElem(p, 3);
-	test1Display(p);
+	p = lianbiaoDelElem(p, 3);
+	lianbiaoDisplay(p);
 
 	printf("查找元素2的下标为：\n");
-	int address = selectElem(p, 2);
+	int address = lianbiaoSelectElem(p, 2);
 	if (address == -1) {
 		printf("没有该元素");
 	}
@@ -58,17 +59,32 @@ void lianbiao() {
 		printf("元素2的下标为：%d\n", address);
 	}
 	printf("更改下标3的位置上的数据为7:\n");
-	p = amendElem(p, 3, 7);
-	test1Display(p);
+	p = lianbiaoAmendElem(p, 3, 7);
+	lianbiaoDisplay(p);
 
 }
 
 void jingtaibiao() {
 	component array[maxSize];
-	int body = initArr(array);
+	int body = jingtaibiaoInitArr(array);
 	printf("静态链表为：\n");
-	test2DisplayArr(array, body);
+	jingtaibiaoDisplayArr(array, body);
 
+	printf("在第3的位置上插入结点‘11’:\n");
+	jingtaibiaoInsertArr(array, body, 3, 11);
+	jingtaibiaoDisplayArr(array, body);
+
+	printf("删除数据域为‘3’的结点:\n");
+	jingtaibiaoDeletArr(array, body, 3);
+	jingtaibiaoDisplayArr(array, body);
+
+	printf("查找数据域为‘11’的结点的位置:\n");
+	int selectAdd = jingtaibiaoSelectElem(array, body, 4);
+	printf("%d\n", selectAdd);
+
+	printf("将结点数据域为‘11’改为‘12’:\n");
+	jingtaibiaoAmendElem(array, body, 11, 12);
+	jingtaibiaoDisplayArr(array, body);
 }
 
 
@@ -78,5 +94,6 @@ void main() {
 	//lianbiao();
 
 	jingtaibiao();
+
 
 }
