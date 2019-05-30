@@ -88,12 +88,28 @@ void jingtaibiao() {
 }
 
 
+void josephRing() {
+	printf("输入圆桌上的人数n:");
+	int n;
+	scanf_s("%d", &n);
+	JosephRingPerson* head = initLink(n);
+	printf("从第k人开始报数(k>1且k<%d)：", n);
+	int k;
+	scanf_s("%d", &k);
+	printf("数到m的人出列：");
+	int m;
+	scanf_s("%d", &m);
+	findAndKillK(head, k, m);
+
+}
+
 void main() {
 	//shunxubiao(); 
 
 	//lianbiao();
 
-	jingtaibiao();
+	//jingtaibiao();
 
+	josephRing();
 
 }

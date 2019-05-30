@@ -20,12 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="jingtaibiao.c" />
+    <ClCompile Include="JosephRing.c" />
     <ClCompile Include="lianbiao.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="shunxubiao.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="jingtaibiao.h" />
+    <ClInclude Include="JosephRing.h" />
     <ClInclude Include="lianbiao.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="shunxubiao.h" />
