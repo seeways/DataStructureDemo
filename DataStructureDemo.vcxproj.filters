@@ -33,6 +33,9 @@
     <ClCompile Include="doubleLink.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="doubleRingLink.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">

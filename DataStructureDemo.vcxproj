@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="doubleLink.c" />
+    <ClCompile Include="doubleRingLink.c" />
     <ClCompile Include="jingtaibiao.c" />
     <ClCompile Include="JosephRing.c" />
     <ClCompile Include="lianbiao.c" />

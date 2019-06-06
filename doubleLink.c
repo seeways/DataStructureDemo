@@ -1,7 +1,7 @@
 #include "doubleLink.h"
 
 
-doubleLinkLine* initLine(doubleLinkLine* head) {
+doubleLinkLine* initDoubleLinkLine(doubleLinkLine* head) {
 	head = (doubleLinkLine*)malloc(sizeof(doubleLinkLine));
 	head->prior = NULL;
 	head->next = NULL;
@@ -18,7 +18,7 @@ doubleLinkLine* initLine(doubleLinkLine* head) {
 	}
 	return head;
 }
-doubleLinkLine* insertLine(doubleLinkLine* head, int data, int add) {
+doubleLinkLine* insertDoubleLinkLine(doubleLinkLine* head, int data, int add) {
 	//新建数据域为data的结点
 	doubleLinkLine* temp = (doubleLinkLine*)malloc(sizeof(doubleLinkLine));
 	temp->data = data;
@@ -50,7 +50,7 @@ doubleLinkLine* insertLine(doubleLinkLine* head, int data, int add) {
 	}
 	return head;
 }
-doubleLinkLine* delLine(doubleLinkLine* head, int data) {
+doubleLinkLine* delDoubleLinkLine(doubleLinkLine* head, int data) {
 	doubleLinkLine* temp = head;
 	//遍历链表
 	while (temp) {
@@ -67,7 +67,7 @@ doubleLinkLine* delLine(doubleLinkLine* head, int data) {
 	return head;
 }
 //head为原双链表，elem表示被查找元素
-int selectElem(doubleLinkLine* head, int elem) {
+int selectDoubleLinkElem(doubleLinkLine* head, int elem) {
 	//新建一个指针t，初始化为头指针 head
 	doubleLinkLine* t = head;
 	int i = 1;
@@ -82,7 +82,7 @@ int selectElem(doubleLinkLine* head, int elem) {
 	return -1;
 }
 //更新函数，其中，add 表示更改结点在双链表中的位置，newElem 为新数据的值
-doubleLinkLine* amendElem(doubleLinkLine* p, int add, int newElem) {
+doubleLinkLine* amendDoubleLinkElem(doubleLinkLine* p, int add, int newElem) {
 	doubleLinkLine* temp = p;
 	//遍历到被删除结点
 	for (int i = 1; i < add; i++) {
@@ -92,7 +92,7 @@ doubleLinkLine* amendElem(doubleLinkLine* p, int add, int newElem) {
 	return p;
 }
 //输出链表的功能函数
-void display(doubleLinkLine* head) {
+void displayDoubleLink(doubleLinkLine* head) {
 	doubleLinkLine* temp = head;
 	while (temp) {
 		if (temp->next == NULL) {

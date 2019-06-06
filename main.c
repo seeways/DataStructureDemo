@@ -107,30 +107,38 @@ void josephRing() {
 void doubleLink() {
 	doubleLinkLine* head = NULL;
 	//创建双链表
-	head = initLine(head);
-	display(head);
+	head = initDoubleLinkLine(head);
+	displayDoubleLink(head);
 	//在表中第 3 的位置插入元素 7
-	head = insertLine(head, 7, 3);
-	display(head);
+	head = insertDoubleLinkLine(head, 7, 3);
+	displayDoubleLink(head);
 	//表中删除元素 2
-	head = delLine(head, 2);
-	display(head);
-	printf("元素 3 的位置是：%d\n", selectElem(head, 3));
+	head = delDoubleLinkLine(head, 2);
+	displayDoubleLink(head);
+	printf("元素 3 的位置是：%d\n", selectDoubleLinkElem(head, 3));
 	//表中第 3 个节点中的数据改为存储 6
-	head = amendElem(head, 3, 6);
-	display(head);
+	head = amendDoubleLinkElem(head, 3, 6);
+	displayDoubleLink(head);
+}
+
+void doubleRingLink() {
+	doubleLinkLine* head = NULL;
+	head = initDoubleRingLinkLine(head);
+	displayDoubleRingLink(head);
 }
 
 void main() {
 	// 第一章 线性表
-	//shunxubiao(); 
+	//shunxubiao(); // 顺序表
 
-	//lianbiao();
+	//lianbiao(); // 链表
 
-	//jingtaibiao();
+	//jingtaibiao(); // 静态链表
 
-	//josephRing();
+	//josephRing(); // 约瑟夫环
 
-	//doubleLink();
+	//doubleLink(); // 双向链表
+
+	doubleRingLink(); // 双向循环链表
 
 }
