@@ -30,6 +30,9 @@
     <ClCompile Include="JosephRing.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="doubleLink.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -45,6 +48,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="JosephRing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="doubleLink.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

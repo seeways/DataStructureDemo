@@ -6,5 +6,6 @@
 #include "lianbiao.h"
 #include "jingtaibiao.h"
 #include "JosephRing.h"
+#include "doubleLink.h"
 
 #endif // !main

@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="doubleLink.c" />
     <ClCompile Include="jingtaibiao.c" />
     <ClCompile Include="JosephRing.c" />
     <ClCompile Include="lianbiao.c" />
@@ -26,6 +27,7 @@
     <ClCompile Include="shunxubiao.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="doubleLink.h" />
     <ClInclude Include="jingtaibiao.h" />
     <ClInclude Include="JosephRing.h" />
     <ClInclude Include="lianbiao.h" />
