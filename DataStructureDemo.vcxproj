@@ -24,7 +24,10 @@
     <ClCompile Include="jingtaibiao.c" />
     <ClCompile Include="JosephRing.c" />
     <ClCompile Include="lianbiao.c" />
+    <ClCompile Include="LinkStack.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="roulette.c" />
+    <ClCompile Include="SequenceStack.c" />
     <ClCompile Include="shunxubiao.c" />
   </ItemGroup>
   <ItemGroup>
@@ -32,7 +35,10 @@
     <ClInclude Include="jingtaibiao.h" />
     <ClInclude Include="JosephRing.h" />
     <ClInclude Include="lianbiao.h" />
+    <ClInclude Include="LinkStack.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="roulette.h" />
+    <ClInclude Include="SequenceStack.h" />
     <ClInclude Include="shunxubiao.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

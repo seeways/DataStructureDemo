@@ -127,18 +127,44 @@ void doubleRingLink() {
 	displayDoubleRingLink(head);
 }
 
+void sequenceStack() {
+	int a[100];
+	int top = -1;
+	top = SequenceStackPush(a, top, 1);
+	top = SequenceStackPush(a, top, 2);
+	top = SequenceStackPush(a, top, 3);
+	top = SequenceStackPush(a, top, 4);
+	top = SequenceStackPop(a, top);
+	top = SequenceStackPop(a, top);
+	top = SequenceStackPop(a, top);
+	top = SequenceStackPop(a, top);
+	top = SequenceStackPop(a, top);
+}
+
+void linkStack() {
+	lineStack* stack = NULL;
+	stack = LinkStackPush(stack, 1);
+	stack = LinkStackPush(stack, 2);
+	stack = LinkStackPush(stack, 3);
+	stack = LinkStackPush(stack, 4);
+	stack = LinkStackPop(stack);
+	stack = LinkStackPop(stack);
+	stack = LinkStackPop(stack);
+	stack = LinkStackPop(stack);
+	stack = LinkStackPop(stack);
+}
+
 void main() {
 	// 第一章 线性表
 	//shunxubiao(); // 顺序表
-
 	//lianbiao(); // 链表
-
 	//jingtaibiao(); // 静态链表
-
 	//josephRing(); // 约瑟夫环
-
 	//doubleLink(); // 双向链表
+	//doubleRingLink(); // 双向循环链表
+	//rouletteShow(); // 轮盘赌
 
-	doubleRingLink(); // 双向循环链表
-
+	// 第二章 栈和队列
+	//sequenceStack();
+	linkStack();
 }

@@ -36,6 +36,15 @@
     <ClCompile Include="doubleRingLink.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="roulette.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceStack.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkStack.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -54,6 +63,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="doubleLink.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="roulette.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkStack.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
