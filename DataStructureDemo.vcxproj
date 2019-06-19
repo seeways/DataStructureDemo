@@ -24,9 +24,11 @@
     <ClCompile Include="jingtaibiao.c" />
     <ClCompile Include="JosephRing.c" />
     <ClCompile Include="lianbiao.c" />
+    <ClCompile Include="LinkQueue.c" />
     <ClCompile Include="LinkStack.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="roulette.c" />
+    <ClCompile Include="SequenceQueue.c" />
     <ClCompile Include="SequenceStack.c" />
     <ClCompile Include="shunxubiao.c" />
   </ItemGroup>
@@ -35,9 +37,11 @@
     <ClInclude Include="jingtaibiao.h" />
     <ClInclude Include="JosephRing.h" />
     <ClInclude Include="lianbiao.h" />
+    <ClInclude Include="LinkQueue.h" />
     <ClInclude Include="LinkStack.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="roulette.h" />
+    <ClInclude Include="SequenceQueue.h" />
     <ClInclude Include="SequenceStack.h" />
     <ClInclude Include="shunxubiao.h" />
   </ItemGroup>

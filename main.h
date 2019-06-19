@@ -13,6 +13,8 @@
 // 第二章 栈和队列
 #include "SequenceStack.h"
 #include "LinkStack.h"
+#include "LinkQueue.h"
+#include "SequenceQueue.h"
 
 
 #endif // !main

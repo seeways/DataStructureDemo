@@ -154,6 +154,60 @@ void linkStack() {
 	stack = LinkStackPop(stack);
 }
 
+
+void sequenceQueue() {
+	int a[100];
+	int front = 0, rear = 0;
+	//入队
+	rear = SequenceQueueEnQueue(a, rear, 1);
+	rear = SequenceQueueEnQueue(a, rear, 2);
+	rear = SequenceQueueEnQueue(a, rear, 3);
+	rear = SequenceQueueEnQueue(a, rear, 4);
+	//出队
+	SequenceQueueDeQueue(a, front, rear);
+}
+
+void sequenceQueue1() {
+	int a[MAX];
+	int front, rear;
+	//设置队头指针和队尾指针，当队列中没有元素时，队头和队尾指向同一块地址
+	front = rear = 0;
+	//入队
+	rear = SequenceQueueEnQueue1(a, front, rear, 1);
+	rear = SequenceQueueEnQueue1(a, front, rear, 2);
+	rear = SequenceQueueEnQueue1(a, front, rear, 3);
+	rear = SequenceQueueEnQueue1(a, front, rear, 4);
+	//出队
+	front = SequenceQueueDeQueue1(a, front, rear);
+	//再入队
+	rear = SequenceQueueEnQueue1(a, front, rear, 5);
+	//再出队
+	front = SequenceQueueDeQueue1(a, front, rear);
+	//再入队
+	rear = SequenceQueueEnQueue1(a, front, rear, 6);
+	//再出队
+	front = SequenceQueueDeQueue1(a, front, rear);
+	front = SequenceQueueDeQueue1(a, front, rear);
+	front = SequenceQueueDeQueue1(a, front, rear);
+	front = SequenceQueueDeQueue1(a, front, rear);
+}
+
+void linkQueue() {
+	linkQueueNode* queue, * top, * rear;
+	queue = top = rear = linkQueueNodeInit();//创建头结点
+	//向链队列中添加结点，使用尾插法添加的同时，队尾指针需要指向链表的最后一个元素
+	rear = LinkQueueEnQueue(rear, 1);
+	rear = LinkQueueEnQueue(rear, 2);
+	rear = LinkQueueEnQueue(rear, 3);
+	rear = LinkQueueEnQueue(rear, 4);
+	//入队完成，所有数据元素开始出队列
+	rear = LinkQueueDeQueue(top, rear);
+	rear = LinkQueueDeQueue(top, rear);
+	rear = LinkQueueDeQueue(top, rear);
+	rear = LinkQueueDeQueue(top, rear);
+	rear = LinkQueueDeQueue(top, rear);
+}
+
 void main() {
 	// 第一章 线性表
 	//shunxubiao(); // 顺序表
@@ -165,6 +219,9 @@ void main() {
 	//rouletteShow(); // 轮盘赌
 
 	// 第二章 栈和队列
-	//sequenceStack();
-	linkStack();
+	//sequenceStack(); // 顺序栈
+	//linkStack(); // 链栈
+	//sequenceQueue(); // 顺序队列
+	//sequenceQueue1(); // 顺序队列1 环状队列
+	linkQueue(); // 链式队列
 }
