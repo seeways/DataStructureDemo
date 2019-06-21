@@ -1,6 +1,7 @@
 #ifndef main
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 // 第一章 线性表
 #include "shunxubiao.h"
@@ -16,5 +17,6 @@
 #include "LinkQueue.h"
 #include "SequenceQueue.h"
 
-
+// 第三章 字符串
+#include "blockLinkStorage.h"
 #endif // !main

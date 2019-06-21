@@ -51,6 +51,9 @@
     <ClCompile Include="LinkQueue.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="blockLinkStorage.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -84,6 +87,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="LinkQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blockLinkStorage.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

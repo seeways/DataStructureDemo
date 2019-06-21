@@ -31,8 +31,10 @@
     <ClCompile Include="SequenceQueue.c" />
     <ClCompile Include="SequenceStack.c" />
     <ClCompile Include="shunxubiao.c" />
+    <ClCompile Include="blockLinkStorage.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="blockLinkStorage.h" />
     <ClInclude Include="doubleLink.h" />
     <ClInclude Include="jingtaibiao.h" />
     <ClInclude Include="JosephRing.h" />
@@ -114,6 +116,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
