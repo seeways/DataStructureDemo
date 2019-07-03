@@ -311,7 +311,14 @@ void KMPAlgorithm(char* S, char* T) {
 	printf("%d", result);
 }
 
-
+void orthogonalListOut() {
+	CrossList M;
+	M.rhead = NULL;
+	M.chead = NULL;
+	M = CreateMatrix_OL(M);
+	printf("输出矩阵M:\n");
+	OLDisplay(M);
+}
 
 void main() {
 	// 第一章 线性表
@@ -342,7 +349,7 @@ void main() {
 	//execSequenceArray(); // 数组的顺序存储，示例为行列式的三位数组
 	//TSMatrixOut(); // 三元组顺序表
 	//RLSMatrixOut();// 行逻辑链接的顺序表
-	// 十字链表法压缩稀疏矩阵
+	orthogonalListOut();// 十字链表法压缩稀疏矩阵
 
 
 

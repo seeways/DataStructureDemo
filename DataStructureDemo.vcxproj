@@ -27,6 +27,7 @@
     <ClCompile Include="LinkQueue.c" />
     <ClCompile Include="LinkStack.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="orthogonalList.c" />
     <ClCompile Include="roulette.c" />
     <ClCompile Include="sequenceArray.c" />
     <ClCompile Include="SequenceQueue.c" />
@@ -44,6 +45,7 @@
     <ClInclude Include="LinkQueue.h" />
     <ClInclude Include="LinkStack.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="orthogonalList.h" />
     <ClInclude Include="roulette.h" />
     <ClInclude Include="sequenceArray.h" />
     <ClInclude Include="SequenceQueue.h" />
