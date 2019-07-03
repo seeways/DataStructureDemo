@@ -244,12 +244,73 @@ void blockStorage() {
 	displayblockLink(head);
 }
 
-void BFAlgorithm() {
+void BFAlgorithm(char* B, char* A) {
+	//串普通模式匹配算法的实现函数，其中 B是伪主串，A是伪子串
+	int i = 0, j = 0;
+	while (i < strlen(B) && j < strlen(A)) {
+		if (B[i] == A[j]) {
+			i++;
+			j++;
+		}
+		else {
+			i = i - j + 1;
+			j = 0;
+		}
+	}
+	//跳出循环有两种可能
+	//i=strlen(B)说明已经遍历完主串，匹配失败；
+	//j=strlen(A),说明子串遍历完成，在主串中成功匹配
+	if (j == strlen(A)) {
+		printf("%d", i - strlen(A) + 1);
+	}
+	else {
+		//运行到此，为i==strlen(B)的情况
+		printf("%s", "匹配失败");
+	}
 
 }
-void KMPAlgorithm() {
 
+
+void KMPAlgorithm(char* S, char* T) {
+	int next[10];
+	//根据模式串T,初始化next 数组
+	{
+		int i = 1;
+		int j = 0;
+		next[1] = 0;
+		while (i < strlen(T)) {
+			if (j == 0 || T[i - 1] == T[j - 1]) {
+				i++;
+				j++;
+				next[i] = j;
+				printf("i=%d j=%d next[i]=%d\n",i,j,next[i]);
+			}
+			else {
+				j = next[j];
+				printf("next[j]=%d\n", next[j]);
+			}
+		}
+	}
+	int i = 1;
+	int j = 1;
+	while (i <= strlen(S) && j <= strlen(T)) {
+		//j==0:代表模式串的第一个字符就和当前测试的字符不相等；
+		//S[i-1]==T[j-1],如果对应位置字符相等，两种情况下，指向当前测试的两个指针下标i 和j 都向后移
+		if (j == 0 || S[i - 1] == T[j - 1]) {
+			i++;
+			j++;
+		}
+		else {
+			j = next[j];//如果测试的两个字符不相等，i 不动，j 变为当前测试字符串的next 值
+		}
+	}
+	int result = -1;
+	if (j > strlen(T)) {//如果条件为真，说明匹配成功
+		result = i - (int)strlen(T);
+	}
+	printf("%d", result);
 }
+
 
 
 void main() {
@@ -273,8 +334,16 @@ void main() {
 	//normalStr(); // 定长顺序存储
 	//heapStorage();// 堆分配存储
 	//blockStorage();// 块链存储
-	BFAlgorithm();// BF算法（串模式匹配算法）
-	KMPAlgorithm();// KMP算法
+	// 串模式匹配算法
+	//BFAlgorithm("ababcabcacbab", "abcac");// BF算法（普通模式匹配）
+	//KMPAlgorithm("ababcabcacbab", "abcac");// KMP算法（快速模式匹配算法）
+
+	// 第四章 数组
+	//execSequenceArray(); // 数组的顺序存储，示例为行列式的三位数组
+	//TSMatrixOut(); // 三元组顺序表
+	//RLSMatrixOut();// 行逻辑链接的顺序表
+	// 十字链表法压缩稀疏矩阵
+
 
 
 }

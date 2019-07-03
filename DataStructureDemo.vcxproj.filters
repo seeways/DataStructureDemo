@@ -13,84 +13,114 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\algorithm">
+      <UniqueIdentifier>{8000dd7c-175c-453b-9614-fdb1d0e09451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\linearList">
+      <UniqueIdentifier>{1d68681d-ea31-4c11-86e7-2b4dc3d8ff76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\linearList">
+      <UniqueIdentifier>{03269ab4-7f94-4fc3-b5b5-27acad0de250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\algorithm">
+      <UniqueIdentifier>{4efaf628-6490-4b04-b27b-8303ea507a1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\array">
+      <UniqueIdentifier>{7c4cc3a4-4ee2-4793-8203-efe2c1f6d2fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\array">
+      <UniqueIdentifier>{51174925-7972-4b85-95be-f4c1abc873ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="shunxubiao.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="lianbiao.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="jingtaibiao.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="JosephRing.c">
-      <Filter>源文件</Filter>
+    <ClCompile Include="blockLinkStorage.c">
+      <Filter>源文件\linearList</Filter>
     </ClCompile>
     <ClCompile Include="doubleLink.c">
-      <Filter>源文件</Filter>
+      <Filter>源文件\linearList</Filter>
     </ClCompile>
     <ClCompile Include="doubleRingLink.c">
-      <Filter>源文件</Filter>
+      <Filter>源文件\linearList</Filter>
     </ClCompile>
-    <ClCompile Include="roulette.c">
-      <Filter>源文件</Filter>
+    <ClCompile Include="jingtaibiao.c">
+      <Filter>源文件\linearList</Filter>
     </ClCompile>
-    <ClCompile Include="SequenceStack.c">
-      <Filter>源文件</Filter>
+    <ClCompile Include="JosephRing.c">
+      <Filter>源文件\linearList</Filter>
     </ClCompile>
-    <ClCompile Include="LinkStack.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="SequenceQueue.c">
-      <Filter>源文件</Filter>
+    <ClCompile Include="lianbiao.c">
+      <Filter>源文件\linearList</Filter>
     </ClCompile>
     <ClCompile Include="LinkQueue.c">
-      <Filter>源文件</Filter>
+      <Filter>源文件\linearList</Filter>
     </ClCompile>
-    <ClCompile Include="blockLinkStorage.c">
-      <Filter>源文件</Filter>
+    <ClCompile Include="LinkStack.c">
+      <Filter>源文件\linearList</Filter>
+    </ClCompile>
+    <ClCompile Include="roulette.c">
+      <Filter>源文件\linearList</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceQueue.c">
+      <Filter>源文件\linearList</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceStack.c">
+      <Filter>源文件\linearList</Filter>
+    </ClCompile>
+    <ClCompile Include="shunxubiao.c">
+      <Filter>源文件\linearList</Filter>
+    </ClCompile>
+    <ClCompile Include="sequenceArray.c">
+      <Filter>源文件\array</Filter>
+    </ClCompile>
+    <ClCompile Include="triple.c">
+      <Filter>源文件\array</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="shunxubiao.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="lianbiao.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="jingtaibiao.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="JosephRing.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="blockLinkStorage.h">
+      <Filter>头文件\linearList</Filter>
     </ClInclude>
     <ClInclude Include="doubleLink.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\linearList</Filter>
     </ClInclude>
-    <ClInclude Include="roulette.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="jingtaibiao.h">
+      <Filter>头文件\linearList</Filter>
     </ClInclude>
-    <ClInclude Include="SequenceStack.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="JosephRing.h">
+      <Filter>头文件\linearList</Filter>
     </ClInclude>
-    <ClInclude Include="LinkStack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="SequenceQueue.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="lianbiao.h">
+      <Filter>头文件\linearList</Filter>
     </ClInclude>
     <ClInclude Include="LinkQueue.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\linearList</Filter>
     </ClInclude>
-    <ClInclude Include="blockLinkStorage.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="LinkStack.h">
+      <Filter>头文件\linearList</Filter>
+    </ClInclude>
+    <ClInclude Include="roulette.h">
+      <Filter>头文件\linearList</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceQueue.h">
+      <Filter>头文件\linearList</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceStack.h">
+      <Filter>头文件\linearList</Filter>
+    </ClInclude>
+    <ClInclude Include="shunxubiao.h">
+      <Filter>头文件\linearList</Filter>
+    </ClInclude>
+    <ClInclude Include="sequenceArray.h">
+      <Filter>头文件\array</Filter>
+    </ClInclude>
+    <ClInclude Include="triple.h">
+      <Filter>头文件\array</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

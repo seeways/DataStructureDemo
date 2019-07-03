@@ -28,10 +28,12 @@
     <ClCompile Include="LinkStack.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="roulette.c" />
+    <ClCompile Include="sequenceArray.c" />
     <ClCompile Include="SequenceQueue.c" />
     <ClCompile Include="SequenceStack.c" />
     <ClCompile Include="shunxubiao.c" />
     <ClCompile Include="blockLinkStorage.c" />
+    <ClCompile Include="triple.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="blockLinkStorage.h" />
@@ -43,9 +45,11 @@
     <ClInclude Include="LinkStack.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="roulette.h" />
+    <ClInclude Include="sequenceArray.h" />
     <ClInclude Include="SequenceQueue.h" />
     <ClInclude Include="SequenceStack.h" />
     <ClInclude Include="shunxubiao.h" />
+    <ClInclude Include="triple.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
