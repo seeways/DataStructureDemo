@@ -350,7 +350,7 @@ void main() {
 	//TSMatrixOut(); // 三元组顺序表
 	//RLSMatrixOut();// 行逻辑链接的顺序表
 	//orthogonalListOut();// 十字链表法压缩稀疏矩阵
-	transposeOut(); // 矩阵的转置算法
-
+	//transposeOut(); // 矩阵的转置算法
+	fastTransposeMatrixOut();
 
 }

@@ -35,4 +35,9 @@ void RLSMatrixOut();// 行逻辑连接的数据输出
 // 矩阵（稀疏矩阵）的转置算法
 TSMatrix transposeMatrix(TSMatrix M, TSMatrix T);
 void transposeOut();
+
+// 矩阵的快速转置算法
+void fastTransposeMatrixOut();
+
+
 #endif // !triple
