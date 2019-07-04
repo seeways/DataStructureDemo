@@ -3,8 +3,8 @@
 
 #include<stdio.h>
 
-#define MAXSIZE 12500
-#define MAXRC 100
+#define MAXSIZE 10000
+#define MAXRC 10000
 #define ElemType int
 
 //结构体
@@ -30,4 +30,9 @@ typedef struct
 }RLSMatrix;
 void RLSMatrixOut();// 行逻辑连接的数据输出
 
+
+
+// 矩阵（稀疏矩阵）的转置算法
+TSMatrix transposeMatrix(TSMatrix M, TSMatrix T);
+void transposeOut();
 #endif // !triple

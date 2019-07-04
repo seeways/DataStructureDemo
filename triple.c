@@ -65,6 +65,59 @@ void RLSMatrixDisplay(RLSMatrix M) {
 	}
 }
 
+// 矩阵（稀疏矩阵）的转置算法
+TSMatrix transposeMatrix(TSMatrix M, TSMatrix T) {
+	// 旧矩阵的行列分别赋值给新矩阵的列和行，实现行列互换
+	T.m = M.n;
+	T.n = M.m;
+	T.num = M.num;
+	// 如果数据存在，则遍历
+	if (T.num) {
+		int q = 0;
+		// 遍历旧矩阵的列(新矩阵的行)
+		for (int col = 1; col <= M.m; col++) {
+			// 遍历数据，如果矩阵列等于数据的列标，则数据的行列标互换
+			for (int p = 0; p < M.num; p++) {
+				if (M.data[p].j == col) {
+					T.data[q].i = M.data[p].j;
+					T.data[q].j = M.data[p].i;
+					T.data[q].data = M.data[p].data;
+					q++;
+				}
+			}
+		}
+	}
+
+	return T;
+}
+
+void transposeOut() {
+	TSMatrix M;
+	// 定义矩阵的行，列，非0元素个数
+	M.m = 2;
+	M.n = 3;
+	M.num = 4;
+	// 定义矩阵的行标，列表，数据值
+	M.data[0].i = 1;
+	M.data[0].j = 2;
+	M.data[0].data = 1;
+	M.data[1].i = 2;
+	M.data[1].j = 2;
+	M.data[1].data = 3;
+	M.data[2].i = 3;
+	M.data[2].j = 1;
+	M.data[2].data = 6;
+	M.data[3].i = 3;
+	M.data[3].j = 2;
+	M.data[3].data = 5;
+	// 定义一个要转置的新矩阵
+	TSMatrix T;
+	T = transposeMatrix(M, T);
+	for (int i = 0; i < T.num; i++) {
+		printf("(%d,%d,%d)\n", T.data[i].i, T.data[i].j, T.data[i].data);
+	}
+}
+
 void TSMatrixOut() {
 	TSMatrix M;
 	M.m = 3;
@@ -118,3 +171,4 @@ void RLSMatrixOut() {
 	//输出矩阵
 	RLSMatrixDisplay(M);
 }
+
