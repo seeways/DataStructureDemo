@@ -1,10 +1,8 @@
 #pragma once
 #ifndef triple
-
 #include<stdio.h>
-
-#define MAXSIZE 10000
-#define MAXRC 10000
+#define MAXSIZE 12500
+#define MAXRC 100
 #define ElemType int
 
 //结构体
@@ -12,15 +10,12 @@ typedef struct {
 	int i, j;//行标i，列标j
 	ElemType data;//元素值
 }triple;
-
 //三元组矩阵的结构表示
 typedef struct {
 	triple data[MAXSIZE];//存储该矩阵中所有非0元素的三元组
 	int n, m, num;//n和m分别记录矩阵的行数和列数，num记录矩阵中所有的非0元素的个数
 }TSMatrix;
 void TSMatrixOut();// 三元组数据输出
-
-
 //行逻辑连接的结构表示
 typedef struct
 {
@@ -29,15 +24,18 @@ typedef struct
 	int mu, nu, tu;//行数，列数，元素个数
 }RLSMatrix;
 void RLSMatrixOut();// 行逻辑连接的数据输出
-
-
-
 // 矩阵（稀疏矩阵）的转置算法
 TSMatrix transposeMatrix(TSMatrix M, TSMatrix T);
 void transposeOut();
-
 // 矩阵的快速转置算法
 void fastTransposeMatrixOut();
+// 矩阵乘法（行逻辑链接的顺序表）
+RLSMatrix MultSMatrix(RLSMatrix A, RLSMatrix B, RLSMatrix C);
+void MultSMatrixOut();
+
+
+// 矩阵加法（基于十字链表）
+
 
 
 #endif // !triple

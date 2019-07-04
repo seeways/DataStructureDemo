@@ -345,12 +345,17 @@ void main() {
 	//BFAlgorithm("ababcabcacbab", "abcac");// BF算法（普通模式匹配）
 	//KMPAlgorithm("ababcabcacbab", "abcac");// KMP算法（快速模式匹配算法）
 
-	// 第四章 数组
+	// 第四章 数组和广义表
+	// 4.1 数组
 	//execSequenceArray(); // 数组的顺序存储，示例为行列式的三位数组
 	//TSMatrixOut(); // 三元组顺序表
 	//RLSMatrixOut();// 行逻辑链接的顺序表
 	//orthogonalListOut();// 十字链表法压缩稀疏矩阵
 	//transposeOut(); // 矩阵的转置算法
-	fastTransposeMatrixOut();
+	//fastTransposeMatrixOut(); // 矩阵的快速转置算法
+	//MultSMatrixOut(); // 矩阵乘法（行逻辑链接的顺序表）
+	// 矩阵加法（基于十字链表）
+
+	// 4.2 广义表
 
 }
