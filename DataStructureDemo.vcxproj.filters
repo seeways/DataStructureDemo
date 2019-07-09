@@ -81,6 +81,9 @@
     <ClCompile Include="orthogonalList.c">
       <Filter>源文件\array</Filter>
     </ClCompile>
+    <ClCompile Include="GYLink.c">
+      <Filter>源文件\array</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -126,6 +129,9 @@
       <Filter>头文件\array</Filter>
     </ClInclude>
     <ClInclude Include="orthogonalList.h">
+      <Filter>头文件\array</Filter>
+    </ClInclude>
+    <ClInclude Include="GYLink.h">
       <Filter>头文件\array</Filter>
     </ClInclude>
   </ItemGroup>

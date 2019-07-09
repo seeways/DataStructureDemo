@@ -283,7 +283,7 @@ void KMPAlgorithm(char* S, char* T) {
 				i++;
 				j++;
 				next[i] = j;
-				printf("i=%d j=%d next[i]=%d\n",i,j,next[i]);
+				printf("i=%d j=%d next[i]=%d\n", i, j, next[i]);
 			}
 			else {
 				j = next[j];
@@ -318,6 +318,19 @@ void orthogonalListOut() {
 	M = CreateMatrix_OL(M);
 	printf("输出矩阵M:\n");
 	OLDisplay(M);
+}
+
+void GYLinkDemo() {
+	// 广义表1的长度
+	Glist1 C1 = NULL;
+	C1 = creatGlist1(C1);
+	int dep = GlistDepth1(C1);
+	printf("广义表1 长度为：%d 深度为：%d\n", GlistLength1(C1), dep);
+
+	// 广义表2的长度
+	Glist2 C2 = NULL;
+	C2 = creatGlist2(C2);
+	printf("广义表2 长度为：%d\n", GlistLength2(C2));
 }
 
 void main() {
@@ -357,5 +370,5 @@ void main() {
 	// 矩阵加法（基于十字链表）
 
 	// 4.2 广义表
-
+	GYLinkDemo();
 }

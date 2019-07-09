@@ -36,6 +36,7 @@ typedef int ElemType;
 // 第四章 数组和广义表
 #include "triple.h"
 #include "orthogonalList.h"
+#include "GYLink.h"
 
 
 #endif // !main
