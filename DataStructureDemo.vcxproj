@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BiTree.c" />
     <ClCompile Include="doubleLink.c" />
     <ClCompile Include="doubleRingLink.c" />
     <ClCompile Include="GYLink.c" />
@@ -38,6 +39,7 @@
     <ClCompile Include="triple.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BiTree.h" />
     <ClInclude Include="blockLinkStorage.h" />
     <ClInclude Include="doubleLink.h" />
     <ClInclude Include="GYLink.h" />

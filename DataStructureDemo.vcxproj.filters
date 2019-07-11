@@ -31,6 +31,12 @@
     <Filter Include="头文件\array">
       <UniqueIdentifier>{51174925-7972-4b85-95be-f4c1abc873ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\tree">
+      <UniqueIdentifier>{27a4582a-3adb-4845-90bb-da31166b782e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\tree">
+      <UniqueIdentifier>{abeed07b-ef6b-429d-9237-21cc93b260c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -84,6 +90,9 @@
     <ClCompile Include="GYLink.c">
       <Filter>源文件\array</Filter>
     </ClCompile>
+    <ClCompile Include="BiTree.c">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -133,6 +142,9 @@
     </ClInclude>
     <ClInclude Include="GYLink.h">
       <Filter>头文件\array</Filter>
+    </ClInclude>
+    <ClInclude Include="BiTree.h">
+      <Filter>头文件\tree</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

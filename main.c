@@ -327,14 +327,14 @@ void GYLinkDemo() {
 	int dep = GlistDepth1(C1);
 	printf("广义表1 长度为：%d 深度为：%d\n", GlistLength1(C1), dep);
 
-	// 广义表2的长度
-	Glist2 C2 = NULL;
-	C2 = creatGlist2(C2);
-	printf("广义表2 长度为：%d\n", GlistLength2(C2));
+	//// 广义表2的长度
+	//Glist2 C2 = NULL;
+	//C2 = creatGlist2(C2);
+	//printf("广义表2 长度为：%d\n", GlistLength2(C2));
 }
 
 void main() {
-	// 第一章 线性表
+	// 线性表
 	//shunxubiao(); // 顺序表
 	//lianbiao(); // 链表
 	//jingtaibiao(); // 静态链表
@@ -343,14 +343,14 @@ void main() {
 	//doubleRingLink(); // 双向循环链表
 	//rouletteShow(); // 轮盘赌
 
-	// 第二章 栈和队列
+	// 栈和队列
 	//sequenceStack(); // 顺序栈
 	//linkStack(); // 链栈
 	//sequenceQueue(); // 顺序队列
 	//sequenceQueue1(); // 顺序队列1 环状队列
 	//linkQueue(); // 链式队列
 
-	// 第三章 字符串
+	// 字符串
 	//normalStr(); // 定长顺序存储
 	//heapStorage();// 堆分配存储
 	//blockStorage();// 块链存储
@@ -358,8 +358,8 @@ void main() {
 	//BFAlgorithm("ababcabcacbab", "abcac");// BF算法（普通模式匹配）
 	//KMPAlgorithm("ababcabcacbab", "abcac");// KMP算法（快速模式匹配算法）
 
-	// 第四章 数组和广义表
-	// 4.1 数组
+	// 数组和广义表
+	// 1 数组
 	//execSequenceArray(); // 数组的顺序存储，示例为行列式的三位数组
 	//TSMatrixOut(); // 三元组顺序表
 	//RLSMatrixOut();// 行逻辑链接的顺序表
@@ -369,6 +369,12 @@ void main() {
 	//MultSMatrixOut(); // 矩阵乘法（行逻辑链接的顺序表）
 	// 矩阵加法（基于十字链表）
 
-	// 4.2 广义表
-	GYLinkDemo();
+	// 2 广义表
+	//GYLinkDemo();
+
+	// 二叉树
+	BiTree Tree;
+	CreateBiTree(&Tree);
+	// 树的左子的左子的数据为4
+	printf("%d", Tree->lchild->lchild->data);
 }
