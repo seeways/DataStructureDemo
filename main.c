@@ -333,6 +333,15 @@ void GYLinkDemo() {
 	//printf("广义表2 长度为：%d\n", GlistLength2(C2));
 }
 
+void BinaryTreeDemo() {
+	// 初始化二叉树
+	BiTree Tree;
+	CreateBiTree(&Tree);
+	printf("先序遍历: \n");
+	PreOrderTraverse(Tree);
+
+}
+
 void main() {
 	// 线性表
 	//shunxubiao(); // 顺序表
@@ -373,8 +382,6 @@ void main() {
 	//GYLinkDemo();
 
 	// 二叉树
-	BiTree Tree;
-	CreateBiTree(&Tree);
-	// 树的左子的左子的数据为4
-	printf("%d", Tree->lchild->lchild->data);
+	BinaryTreeDemo();
+
 }
