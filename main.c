@@ -339,7 +339,12 @@ void BinaryTreeDemo() {
 	CreateBiTree(&Tree);
 	printf("先序遍历: \n");
 	PreOrderTraverse(Tree);
-
+	printf("\n中序遍历: \n");
+	INOrderTraverse(Tree);
+	printf("\n后序遍历: \n");
+	PostOrderTraverse(Tree);
+	printf("\n层次遍历: \n");
+	HierarchicalTraverse(Tree);
 }
 
 void main() {

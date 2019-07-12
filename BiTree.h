@@ -17,9 +17,11 @@ void CreateBiTree(BiTree* T);
 // 先序遍历
 void PreOrderTraverse(BiTree T);
 // 中序遍历
-
+void INOrderTraverse(BiTree T);
 // 后序遍历
-
+void PostOrderTraverse(BiTree T);
+// 层次遍历
+void HierarchicalTraverse(BiTree tree);
 
 
 #endif // !BiTree

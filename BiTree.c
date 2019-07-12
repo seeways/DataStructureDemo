@@ -50,10 +50,59 @@ void CreateBiTree(BiTree* T) {
 //先序遍历
 void PreOrderTraverse(BiTree T) {
 	if (T) {
-		printf("%d ", T->data); //操作结点数据
+		printf("%d ", T->data); //访问根节点
 		PreOrderTraverse(T->lchild);//访问该结点的左孩子
 		PreOrderTraverse(T->rchild);//访问该结点的右孩子
 	}
 	//如果结点为空，返回上一层
 	return;
+}
+
+//中序遍历
+void INOrderTraverse(BiTree T) {
+	if (T) {
+		INOrderTraverse(T->lchild);//遍历左孩子
+		printf("%d ", T->data);//访问根节点
+		INOrderTraverse(T->rchild);//遍历右孩子
+	}
+	//如果结点为空，返回上一层
+	return;
+}
+
+//后序遍历
+void PostOrderTraverse(BiTree T) {
+	if (T) {
+		PostOrderTraverse(T->lchild);//遍历左孩子
+		PostOrderTraverse(T->rchild);//遍历右孩子
+		printf("%d ", T->data);//访问根节点
+	}
+	//如果结点为空，返回上一层
+	return;
+}
+
+
+
+
+// 层次遍历
+void HierarchicalTraverse(BiTree node) {
+	//初始化队头和队尾指针开始时都为0
+	int front = 0, rear = 0;
+	BiTNode* p;
+	//采用顺序队列，初始化创建队列数组
+	BiTree a[20];
+	//根结点入队
+	a[rear++] = node;
+	//当队头和队尾相等时，表示队列为空
+	while (front < rear) {
+		//队头结点出队
+		p = a[front++];
+		printf("%d ", p->data);
+		//将队头结点的左右孩子依次入队
+		if (p->lchild != NULL) {
+			a[rear++] = p->lchild;
+		}
+		if (p->rchild != NULL) {
+			a[rear++] = p->rchild;
+		}
+	}
 }
