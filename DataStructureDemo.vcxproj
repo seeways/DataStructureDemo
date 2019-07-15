@@ -36,6 +36,7 @@
     <ClCompile Include="SequenceStack.c" />
     <ClCompile Include="shunxubiao.c" />
     <ClCompile Include="blockLinkStorage.c" />
+    <ClCompile Include="ThreadBinaryTree.c" />
     <ClCompile Include="triple.c" />
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +56,7 @@
     <ClInclude Include="SequenceQueue.h" />
     <ClInclude Include="SequenceStack.h" />
     <ClInclude Include="shunxubiao.h" />
+    <ClInclude Include="ThreadBinaryTree.h" />
     <ClInclude Include="triple.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

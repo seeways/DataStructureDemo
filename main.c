@@ -347,6 +347,29 @@ void BinaryTreeDemo() {
 	HierarchicalTraverse(Tree);
 }
 
+void ThreadBinaryTreeDemo() {
+	// 124###35##6##
+	BiThrTree t;
+	printf("输入前序二叉树:\n");
+	CreateTree(&t);
+	printf("\n");
+	InThreading(t);
+	printf("输出中序序列:\n");
+	InOrderThraverse_Thr(t);
+}
+
+void DoubleThreadBinaryTreeDemo() {
+	// 124###35##6##
+	BiThrTree t;
+	BiThrTree h;
+	printf("输入前序二叉树:\n");
+	CreateTree(&t);
+	printf("\n");
+	InOrderThread_Head(&h, t);
+	printf("输出中序序列:\n");
+	DoubleInOrderThraverse_Thr(h);
+}
+
 void main() {
 	// 线性表
 	//shunxubiao(); // 顺序表
@@ -387,6 +410,9 @@ void main() {
 	//GYLinkDemo();
 
 	// 二叉树
-	BinaryTreeDemo();
+	//BinaryTreeDemo(); // 二叉树的4种遍历算法
+	//ThreadBinaryTreeDemo(); // 线索二叉树
+	DoubleThreadBinaryTreeDemo();// 双向线索二叉树
+
 
 }

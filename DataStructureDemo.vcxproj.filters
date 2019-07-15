@@ -93,6 +93,9 @@
     <ClCompile Include="BiTree.c">
       <Filter>源文件\tree</Filter>
     </ClCompile>
+    <ClCompile Include="ThreadBinaryTree.c">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -144,6 +147,9 @@
       <Filter>头文件\array</Filter>
     </ClInclude>
     <ClInclude Include="BiTree.h">
+      <Filter>头文件\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadBinaryTree.h">
       <Filter>头文件\tree</Filter>
     </ClInclude>
   </ItemGroup>

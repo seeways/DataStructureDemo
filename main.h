@@ -40,6 +40,7 @@ typedef int ElemType;
 
 // ¶þ²æÊ÷
 #include "BiTree.h"
+#include "ThreadBinaryTree.h"
 
 
 
