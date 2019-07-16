@@ -370,6 +370,22 @@ void DoubleThreadBinaryTreeDemo() {
 	DoubleInOrderThraverse_Thr(h);
 }
 
+
+void SaveTreeDemo() {
+	// 双亲结点
+	//PTree tree;
+	//tree = InitPNode(&tree);
+	//FindParent(tree);
+
+	// 孩子结点
+	CTree tree;
+	tree = InitKidsTree(&tree);
+	//默认数根节点位于数组notes[0]处
+	tree.r = 0;
+	printf("找出节点 F 的所有孩子节点：");
+	findKids(tree, 'F');
+}
+
 void main() {
 	// 线性表
 	//shunxubiao(); // 顺序表
@@ -412,7 +428,7 @@ void main() {
 	// 二叉树
 	//BinaryTreeDemo(); // 二叉树的4种遍历算法
 	//ThreadBinaryTreeDemo(); // 线索二叉树
-	DoubleThreadBinaryTreeDemo();// 双向线索二叉树
-
+	//DoubleThreadBinaryTreeDemo();// 双向线索二叉树
+	SaveTreeDemo(); // 树的存储方法
 
 }

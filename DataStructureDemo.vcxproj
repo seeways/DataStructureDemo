@@ -31,6 +31,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="orthogonalList.c" />
     <ClCompile Include="roulette.c" />
+    <ClCompile Include="SaveTree.c" />
     <ClCompile Include="sequenceArray.c" />
     <ClCompile Include="SequenceQueue.c" />
     <ClCompile Include="SequenceStack.c" />
@@ -52,6 +53,7 @@
     <ClInclude Include="main.h" />
     <ClInclude Include="orthogonalList.h" />
     <ClInclude Include="roulette.h" />
+    <ClInclude Include="SaveTree.h" />
     <ClInclude Include="sequenceArray.h" />
     <ClInclude Include="SequenceQueue.h" />
     <ClInclude Include="SequenceStack.h" />
