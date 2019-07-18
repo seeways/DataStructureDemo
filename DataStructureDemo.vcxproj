@@ -23,6 +23,7 @@
     <ClCompile Include="doubleLink.c" />
     <ClCompile Include="doubleRingLink.c" />
     <ClCompile Include="GYLink.c" />
+    <ClCompile Include="HuffmanTree.c" />
     <ClCompile Include="jingtaibiao.c" />
     <ClCompile Include="JosephRing.c" />
     <ClCompile Include="lianbiao.c" />
@@ -45,6 +46,7 @@
     <ClInclude Include="blockLinkStorage.h" />
     <ClInclude Include="doubleLink.h" />
     <ClInclude Include="GYLink.h" />
+    <ClInclude Include="HuffmanTree.h" />
     <ClInclude Include="jingtaibiao.h" />
     <ClInclude Include="JosephRing.h" />
     <ClInclude Include="lianbiao.h" />

@@ -386,6 +386,16 @@ void SaveTreeDemo() {
 	findKids(tree, 'F');
 }
 
+void HuffmanTreeDemo() {
+	int w[5] = { 2, 8, 7, 6, 5 };
+	int n = 5;
+	HuffmanTree htree;
+	HuffmanCode htable;
+	CreateHuffmanTree(&htree, w, n);
+	HuffmanCoding(htree, &htable, n);
+	PrintHuffmanCode(htable, w, n);
+}
+
 void main() {
 	// 线性表
 	//shunxubiao(); // 顺序表
@@ -429,6 +439,6 @@ void main() {
 	//BinaryTreeDemo(); // 二叉树的4种遍历算法
 	//ThreadBinaryTreeDemo(); // 线索二叉树
 	//DoubleThreadBinaryTreeDemo();// 双向线索二叉树
-	SaveTreeDemo(); // 树的存储方法
-
+	//SaveTreeDemo(); // 树的存储方法
+	HuffmanTreeDemo(); // 霍夫曼树
 }

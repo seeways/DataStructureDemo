@@ -99,6 +99,9 @@
     <ClCompile Include="SaveTree.c">
       <Filter>源文件\tree</Filter>
     </ClCompile>
+    <ClCompile Include="HuffmanTree.c">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -156,6 +159,9 @@
       <Filter>头文件\tree</Filter>
     </ClInclude>
     <ClInclude Include="SaveTree.h">
+      <Filter>头文件\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="HuffmanTree.h">
       <Filter>头文件\tree</Filter>
     </ClInclude>
   </ItemGroup>

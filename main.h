@@ -42,6 +42,7 @@ typedef int ElemType;
 #include "BiTree.h"
 #include "ThreadBinaryTree.h"
 #include "SaveTree.h"
+#include "HuffmanTree.h"
 
 
 
