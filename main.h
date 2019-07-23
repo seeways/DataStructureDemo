@@ -43,8 +43,10 @@ typedef int ElemType;
 #include "ThreadBinaryTree.h"
 #include "SaveTree.h"
 #include "HuffmanTree.h"
+#include "BackTrackAlgorithm.h"
 
-
+// ͼ
+#include "SequenceGraph.h"
 
 
 #endif // !main

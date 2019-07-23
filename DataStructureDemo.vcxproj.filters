@@ -37,6 +37,12 @@
     <Filter Include="头文件\tree">
       <UniqueIdentifier>{abeed07b-ef6b-429d-9237-21cc93b260c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\graph">
+      <UniqueIdentifier>{ff71c552-7d53-4903-bc15-f096b135e1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\graph">
+      <UniqueIdentifier>{7f89db7c-7b72-45a2-a3e5-1403c52769f4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -102,6 +108,12 @@
     <ClCompile Include="HuffmanTree.c">
       <Filter>源文件\tree</Filter>
     </ClCompile>
+    <ClCompile Include="BackTrackAlgorithm.c">
+      <Filter>源文件\algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceGraph.c">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -163,6 +175,12 @@
     </ClInclude>
     <ClInclude Include="HuffmanTree.h">
       <Filter>头文件\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="BackTrackAlgorithm.h">
+      <Filter>头文件\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceGraph.h">
+      <Filter>头文件\graph</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

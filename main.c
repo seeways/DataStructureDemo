@@ -396,6 +396,71 @@ void HuffmanTreeDemo() {
 	PrintHuffmanCode(htable, w, n);
 }
 
+void BackTrackDemo() {
+	int n = 2;
+	for (int i = 0; i < 5; i++) {
+		set[i] = 0;
+	}
+	PowerSet(1, n);
+}
+
+
+
+
+
+//折半查找函数
+void searchItem() {
+	//数组必须是有序数组
+	int arr[19] = { 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 };
+	int value = 15;
+	int count = 0;
+	int low = 0, high = 19 - 1, mid;
+	while (low <= high) {
+		count++;
+
+		mid = (low + high) / 2;
+		if (value > arr[mid]) {
+			low = mid + 1;
+		}
+		else if (value < arr[mid]) {
+			high = mid - 1;
+		}
+		else {
+			printf("loc = %d\ncount = %d", mid, count);
+			return mid;
+		}
+
+	}
+	printf("数组中没有这个数\n");
+}
+
+
+void SequenceGraphDemo() {
+/*
+2
+6,10
+1
+2
+3
+4
+5
+6
+1,2,5
+2,3,4
+3,1,8
+1,4,7
+4,3,5
+3,6,9
+6,1,3
+4,6,6
+6,5,1
+5,4,5
+*/
+	MGraph G;//建立一个图的变量
+	CreateGraph(&G);//调用创建函数，传入地址参数
+	PrintGrapth(G);//输出图的二阶矩阵
+}
+
 void main() {
 	// 线性表
 	//shunxubiao(); // 顺序表
@@ -440,5 +505,17 @@ void main() {
 	//ThreadBinaryTreeDemo(); // 线索二叉树
 	//DoubleThreadBinaryTreeDemo();// 双向线索二叉树
 	//SaveTreeDemo(); // 树的存储方法
-	HuffmanTreeDemo(); // 霍夫曼树
+	//HuffmanTreeDemo(); // 霍夫曼树
+	//BackTrackDemo(); // 回溯算法
+
+	// 图 (图的存储结构)
+	SequenceGraphDemo(); // 顺序图
+
+
+
+
+	// 算法
+	//searchItem();//折半查找（二分查找）
+
+
 }
