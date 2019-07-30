@@ -461,9 +461,35 @@ void SequenceGraphDemo() {
 	PrintGrapth(G);//输出图的二阶矩阵
 }
 
+/*
+8,9
+1
+2
+3
+4
+5
+6
+7
+8
+1,2
+2,4
+2,5
+4,8
+5,8
+1,3
+3,6
+6,7
+7,3
+*/
+void DFSDemo() {
+	DFSMGraph G;//建立一个图的变量
+	CreateDFSDN(&G);//初始化图
+	DFSTraverse(G);//深度优先搜索图
+}
+
 void main() {
 	// 线性表
-	//shunxubiao(); // 顺序表
+	//shunxubiao(); // 顺序表x`
 	//lianbiao(); // 链表
 	//jingtaibiao(); // 静态链表
 	//josephRing(); // 约瑟夫环
@@ -509,8 +535,8 @@ void main() {
 	//BackTrackDemo(); // 回溯算法
 
 	// 图 (图的存储结构)
-	SequenceGraphDemo(); // 顺序图
-
+	//SequenceGraphDemo(); // 顺序图
+	DFSDemo(); // 深度优先搜索
 
 
 

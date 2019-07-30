@@ -47,6 +47,6 @@ typedef int ElemType;
 
 // ͼ
 #include "SequenceGraph.h"
-
+#include "DFS.h"
 
 #endif // !main

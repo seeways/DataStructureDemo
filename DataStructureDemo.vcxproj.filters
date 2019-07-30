@@ -114,6 +114,9 @@
     <ClCompile Include="SequenceGraph.c">
       <Filter>源文件\graph</Filter>
     </ClCompile>
+    <ClCompile Include="DFS.c">
+      <Filter>源文件\graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -180,6 +183,9 @@
       <Filter>头文件\algorithm</Filter>
     </ClInclude>
     <ClInclude Include="SequenceGraph.h">
+      <Filter>头文件\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="DFS.h">
       <Filter>头文件\graph</Filter>
     </ClInclude>
   </ItemGroup>

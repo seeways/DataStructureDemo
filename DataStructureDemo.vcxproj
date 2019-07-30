@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="BackTrackAlgorithm.c" />
     <ClCompile Include="BiTree.c" />
+    <ClCompile Include="DFS.c" />
     <ClCompile Include="doubleLink.c" />
     <ClCompile Include="doubleRingLink.c" />
     <ClCompile Include="GYLink.c" />
@@ -47,6 +48,7 @@
     <ClInclude Include="BackTrackAlgorithm.h" />
     <ClInclude Include="BiTree.h" />
     <ClInclude Include="blockLinkStorage.h" />
+    <ClInclude Include="DFS.h" />
     <ClInclude Include="doubleLink.h" />
     <ClInclude Include="GYLink.h" />
     <ClInclude Include="HuffmanTree.h" />
