@@ -489,7 +489,7 @@ void DFSDemo() {
 
 void main() {
 	// 线性表
-	//shunxubiao(); // 顺序表x`
+	//shunxubiao(); // 顺序表
 	//lianbiao(); // 链表
 	//jingtaibiao(); // 静态链表
 	//josephRing(); // 约瑟夫环
