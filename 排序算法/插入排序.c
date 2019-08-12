@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-
-/**
-arg1: 数组
-arg2: 数组个数
-
-*/
 void insertSort(int arr[], int n)
 {
 	int temp, i, j;
