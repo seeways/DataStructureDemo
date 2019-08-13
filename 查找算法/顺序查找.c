@@ -29,10 +29,7 @@ int main(int argc, char const *argv[])
 	// 查找关键字在数组中的下标
 	int location = Search(arr,7,key);
 
-	int n = 0;
-	while(key != arr[n-1])
-		n--;
-	if (n < 0)
+	if (location < 0)
 	{
 		printf("Search Failed! \n");
 	}
